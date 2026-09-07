@@ -1,0 +1,61 @@
+MIT License
+
+Copyright (c) 2026 Palladium Null Contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+## ETHICS ADDENDUM — Defensive Use Only
+
+This software is released under the MIT License above, **subject to the following ethical addendum** which forms an inseparable part of the license grant:
+
+### 1. Defensive Purpose Only
+The Software is designed, implemented, and licensed exclusively for **civil-defense, shelter-guidance, and situational-awareness** purposes. It fuses open, receive-only sensor data to produce a defensive operating picture. It **cannot** and **must not** be used, modified, or extended to:
+
+- Compute aimpoints, fire-control solutions, or intercept trajectories
+- Control, cue, or launch any weapon, interceptor, effector, or kinetic/non-kinetic effector
+- Perform electronic attack, jamming, spoofing, or any RF emission
+- Conduct targeting, battle-damage assessment, or kill-chain functions
+- Enable any offensive military or coercive capability
+
+### 2. Technical Enforcement
+The Software contains programmatic safeguards (type-system constraints, test suite, runtime assertions) that **fail the build** if fire-control types, weapons buses, aimpoint geometry, intercept modules, or transmitter classes are introduced. These safeguards are integral to the Software and must not be removed, disabled, or circumvented.
+
+### 3. No Transmitter / Emitter Designs
+The Software includes no transmitter schematics, exciter designs, RF power-amplifier layouts, or emission-control logic. The CAD model (`cad/palladium-null-array.cad.json`) explicitly declares `interfaces.weapons === null` and `compliance.transmitter === "none"`.
+
+### 4. Open Data Only
+The Software processes only publicly available, open-source data streams (ADS-B, AIS, METAR, USGS, GNSS integrity, FIRMS-class IR, TLEs). It does not ingest classified, restricted, or proprietary sensor feeds.
+
+### 5. Dual-Use Acknowledgement
+The physics implemented herein (Doppler, TDOA, radio horizon, SNR, orbital mechanics) is dual-use by nature. The authors acknowledge this danger and have deliberately architected the Software to **only** traverse the defensive path. Users bear responsibility for ensuring their deployments remain within the defensive envelope.
+
+### 6. License Termination
+Any use, modification, or distribution of the Software that violates this Addendum automatically terminates the license grant. The Software reverts to “All Rights Reserved” for the violating party.
+
+### 7. No Warranty of Safety
+The Software is provided “AS IS” without warranty of any kind. The defensive architecture does not guarantee safety in operational environments. Operators must validate all outputs against independent sources before acting on shelter directives.
+
+### 8. Attribution
+Derivative works must retain this Ethics Addendum verbatim in their LICENSE file and in any distributed binary or container image.
+
+---
+
+**By using, copying, modifying, or distributing this Software, you accept the MIT License terms above AND this Ethics Addendum.**
