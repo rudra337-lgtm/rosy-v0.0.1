@@ -1,0 +1,26 @@
+{
+  "name": "palladium-null",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "description": "PALLADIUM NULL — the operating picture that cannot fire. Null-Doctrine Civil Defense Software (NDCDS).",
+  "license": "SEE LICENSE IN LICENSE",
+  "scripts": {
+    "dev": "node server/dev.js",
+    "build": "vite build && esbuild server/index.ts --bundle --platform=node --format=esm --outfile=dist-server/index.mjs",
+    "prestart": "npm run build",
+    "start": "node dist-server/index.mjs",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "three": "^0.169.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11",
+    "vitest": "^2.1.8"
+  }
+}
