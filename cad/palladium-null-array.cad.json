@@ -1,0 +1,287 @@
+{
+  "schema": "palladium.cad/0.1",
+  "name": "PN-LISTEN-1 Passive Circumferential Array",
+  "units": "meters",
+  "massEstimateKg": 112374,
+  "materials": [
+    "Reinforced Concrete C40/50",
+    "Structural Steel S355",
+    "RF-Transparent Fiber Composite",
+    "Stainless Steel 316L",
+    "Aluminium 6061-T6"
+  ],
+  "parts": [
+    {
+      "id": "foundation",
+      "name": "Foundation Ring",
+      "geometry": { "type": "Torus", "params": { "radius": 7, "tube": 0.6, "radialSegments": 12, "tubularSegments": 64 } },
+      "material": "Reinforced Concrete C40/50",
+      "massKg": 50600,
+      "notes": "14 m diameter RF-transparent perimeter, doubles as security fence footing"
+    },
+    {
+      "id": "vault",
+      "name": "Faraday Equipment Vault",
+      "geometry": { "type": "Box", "params": { "width": 8, "height": 2.5, "depth": 5 } },
+      "material": "Reinforced Concrete C40/50 + Steel Liner",
+      "massKg": 38500,
+      "notes": "Buried vault housing receivers, clocks, fusion, NULL BUS; no exciter cavity"
+    },
+    {
+      "id": "equipment",
+      "name": "Receiver & Processing Racks",
+      "geometry": { "type": "Box", "params": { "width": 6, "height": 2, "depth": 3 } },
+      "material": "Aluminium 6061-T6 Racks",
+      "massKg": 1400,
+      "notes": "SDR front-ends, PTP grandmaster, fusion compute, NULL BUS singleton"
+    },
+    {
+      "id": "element-0",
+      "name": "Receive Element 0",
+      "geometry": { "type": "ShapeExtrude", "params": { "width": 0.8, "height": 1.2, "depth": 0.15, "radialSegments": 8 } },
+      "material": "RF-Transparent Fiber Composite",
+      "massKg": 85,
+      "notes": "Vivaldi-notch wideband receive element, schematic shape only"
+    },
+    {
+      "id": "element-1",
+      "name": "Receive Element 1",
+      "geometry": { "type": "ShapeExtrude", "params": { "width": 0.8, "height": 1.2, "depth": 0.15, "radialSegments": 8 } },
+      "material": "RF-Transparent Fiber Composite",
+      "massKg": 85,
+      "notes": "Vivaldi-notch wideband receive element, schematic shape only"
+    },
+    {
+      "id": "element-2",
+      "name": "Receive Element 2",
+      "geometry": { "type": "ShapeExtrude", "params": { "width": 0.8, "height": 1.2, "depth": 0.15, "radialSegments": 8 } },
+      "material": "RF-Transparent Fiber Composite",
+      "massKg": 85,
+      "notes": "Vivaldi-notch wideband receive element, schematic shape only"
+    },
+    {
+      "id": "element-3",
+      "name": "Receive Element 3",
+      "geometry": { "type": "ShapeExtrude", "params": { "width": 0.8, "height": 1.2, "depth": 0.15, "radialSegments": 8 } },
+      "material": "RF-Transparent Fiber Composite",
+      "massKg": 85,
+      "notes": "Vivaldi-notch wideband receive element, schematic shape only"
+    },
+    {
+      "id": "element-4",
+      "name": "Receive Element 4",
+      "geometry": { "type": "ShapeExtrude", "params": { "width": 0.8, "height": 1.2, "depth": 0.15, "radialSegments": 8 } },
+      "material": "RF-Transparent Fiber Composite",
+      "massKg": 85,
+      "notes": "Vivaldi-notch wideband receive element, schematic shape only"
+    },
+    {
+      "id": "element-5",
+      "name": "Receive Element 5",
+      "geometry": { "type": "ShapeExtrude", "params": { "width": 0.8, "height": 1.2, "depth": 0.15, "radialSegments": 8 } },
+      "material": "RF-Transparent Fiber Composite",
+      "massKg": 85,
+      "notes": "Vivaldi-notch wideband receive element, schematic shape only"
+    },
+    {
+      "id": "element-6",
+      "name": "Receive Element 6",
+      "geometry": { "type": "ShapeExtrude", "params": { "width": 0.8, "height": 1.2, "depth": 0.15, "radialSegments": 8 } },
+      "material": "RF-Transparent Fiber Composite",
+      "massKg": 85,
+      "notes": "Vivaldi-notch wideband receive element, schematic shape only"
+    },
+    {
+      "id": "element-7",
+      "name": "Receive Element 7",
+      "geometry": { "type": "ShapeExtrude", "params": { "width": 0.8, "height": 1.2, "depth": 0.15, "radialSegments": 8 } },
+      "material": "RF-Transparent Fiber Composite",
+      "massKg": 85,
+      "notes": "Vivaldi-notch wideband receive element, schematic shape only"
+    },
+    {
+      "id": "element-8",
+      "name": "Receive Element 8",
+      "geometry": { "type": "ShapeExtrude", "params": { "width": 0.8, "height": 1.2, "depth": 0.15, "radialSegments": 8 } },
+      "material": "RF-Transparent Fiber Composite",
+      "massKg": 85,
+      "notes": "Vivaldi-notch wideband receive element, schematic shape only"
+    },
+    {
+      "id": "element-9",
+      "name": "Receive Element 9",
+      "geometry": { "type": "ShapeExtrude", "params": { "width": 0.8, "height": 1.2, "depth": 0.15, "radialSegments": 8 } },
+      "material": "RF-Transparent Fiber Composite",
+      "massKg": 85,
+      "notes": "Vivaldi-notch wideband receive element, schematic shape only"
+    },
+    {
+      "id": "element-10",
+      "name": "Receive Element 10",
+      "geometry": { "type": "ShapeExtrude", "params": { "width": 0.8, "height": 1.2, "depth": 0.15, "radialSegments": 8 } },
+      "material": "RF-Transparent Fiber Composite",
+      "massKg": 85,
+      "notes": "Vivaldi-notch wideband receive element, schematic shape only"
+    },
+    {
+      "id": "element-11",
+      "name": "Receive Element 11",
+      "geometry": { "type": "ShapeExtrude", "params": { "width": 0.8, "height": 1.2, "depth": 0.15, "radialSegments": 8 } },
+      "material": "RF-Transparent Fiber Composite",
+      "massKg": 85,
+      "notes": "Vivaldi-notch wideband receive element, schematic shape only"
+    },
+    {
+      "id": "element-12",
+      "name": "Receive Element 12",
+      "geometry": { "type": "ShapeExtrude", "params": { "width": 0.8, "height": 1.2, "depth": 0.15, "radialSegments": 8 } },
+      "material": "RF-Transparent Fiber Composite",
+      "massKg": 85,
+      "notes": "Vivaldi-notch wideband receive element, schematic shape only"
+    },
+    {
+      "id": "element-13",
+      "name": "Receive Element 13",
+      "geometry": { "type": "ShapeExtrude", "params": { "width": 0.8, "height": 1.2, "depth": 0.15, "radialSegments": 8 } },
+      "material": "RF-Transparent Fiber Composite",
+      "massKg": 85,
+      "notes": "Vivaldi-notch wideband receive element, schematic shape only"
+    },
+    {
+      "id": "element-14",
+      "name": "Receive Element 14",
+      "geometry": { "type": "ShapeExtrude", "params": { "width": 0.8, "height": 1.2, "depth": 0.15, "radialSegments": 8 } },
+      "material": "RF-Transparent Fiber Composite",
+      "massKg": 85,
+      "notes": "Vivaldi-notch wideband receive element, schematic shape only"
+    },
+    {
+      "id": "element-15",
+      "name": "Receive Element 15",
+      "geometry": { "type": "ShapeExtrude", "params": { "width": 0.8, "height": 1.2, "depth": 0.15, "radialSegments": 8 } },
+      "material": "RF-Transparent Fiber Composite",
+      "massKg": 85,
+      "notes": "Vivaldi-notch wideband receive element, schematic shape only"
+    },
+    {
+      "id": "element-16",
+      "name": "Receive Element 16",
+      "geometry": { "type": "ShapeExtrude", "params": { "width": 0.8, "height": 1.2, "depth": 0.15, "radialSegments": 8 } },
+      "material": "RF-Transparent Fiber Composite",
+      "massKg": 85,
+      "notes": "Vivaldi-notch wideband receive element, schematic shape only"
+    },
+    {
+      "id": "element-17",
+      "name": "Receive Element 17",
+      "geometry": { "type": "ShapeExtrude", "params": { "width": 0.8, "height": 1.2, "depth": 0.15, "radialSegments": 8 } },
+      "material": "RF-Transparent Fiber Composite",
+      "massKg": 85,
+      "notes": "Vivaldi-notch wideband receive element, schematic shape only"
+    },
+    {
+      "id": "element-18",
+      "name": "Receive Element 18",
+      "geometry": { "type": "ShapeExtrude", "params": { "width": 0.8, "height": 1.2, "depth": 0.15, "radialSegments": 8 } },
+      "material": "RF-Transparent Fiber Composite",
+      "massKg": 85,
+      "notes": "Vivaldi-notch wideband receive element, schematic shape only"
+    },
+    {
+      "id": "element-19",
+      "name": "Receive Element 19",
+      "geometry": { "type": "ShapeExtrude", "params": { "width": 0.8, "height": 1.2, "depth": 0.15, "radialSegments": 8 } },
+      "material": "RF-Transparent Fiber Composite",
+      "massKg": 85,
+      "notes": "Vivaldi-notch wideband receive element, schematic shape only"
+    },
+    {
+      "id": "element-20",
+      "name": "Receive Element 20",
+      "geometry": { "type": "ShapeExtrude", "params": { "width": 0.8, "height": 1.2, "depth": 0.15, "radialSegments": 8 } },
+      "material": "RF-Transparent Fiber Composite",
+      "massKg": 85,
+      "notes": "Vivaldi-notch wideband receive element, schematic shape only"
+    },
+    {
+      "id": "element-21",
+      "name": "Receive Element 21",
+      "geometry": { "type": "ShapeExtrude", "params": { "width": 0.8, "height": 1.2, "depth": 0.15, "radialSegments": 8 } },
+      "material": "RF-Transparent Fiber Composite",
+      "massKg": 85,
+      "notes": "Vivaldi-notch wideband receive element, schematic shape only"
+    },
+    {
+      "id": "element-22",
+      "name": "Receive Element 22",
+      "geometry": { "type": "ShapeExtrude", "params": { "width": 0.8, "height": 1.2, "depth": 0.15, "radialSegments": 8 } },
+      "material": "RF-Transparent Fiber Composite",
+      "massKg": 85,
+      "notes": "Vivaldi-notch wideband receive element, schematic shape only"
+    },
+    {
+      "id": "element-23",
+      "name": "Receive Element 23",
+      "geometry": { "type": "ShapeExtrude", "params": { "width": 0.8, "height": 1.2, "depth": 0.15, "radialSegments": 8 } },
+      "material": "RF-Transparent Fiber Composite",
+      "massKg": 85,
+      "notes": "Vivaldi-notch wideband receive element, schematic shape only"
+    },
+    {
+      "id": "tower",
+      "name": "Calibration Tower",
+      "geometry": { "type": "Cylinder", "params": { "radiusTop": 0.4, "radiusBottom": 0.5, "height": 6, "radialSegments": 16 } },
+      "material": "Structural Steel S355",
+      "massKg": 1250,
+      "notes": "Optical/GNSS time transfer beacon at apex; no RF emitter"
+    },
+    {
+      "id": "headhouse",
+      "name": "Civil Shelter Head-House S-01",
+      "geometry": { "type": "Box", "params": { "width": 6, "height": 4, "depth": 5 } },
+      "material": "Reinforced Concrete C40/50",
+      "massKg": 17600,
+      "notes": "Shelter entrance 40 m from array; labelled CIVIL SHELTER S-01"
+    },
+    {
+      "id": "fence",
+      "name": "RF-Transparent Security Fence",
+      "geometry": { "type": "Torus", "params": { "radius": 7.5, "tube": 0.05, "radialSegments": 12, "tubularSegments": 64 } },
+      "material": "RF-Transparent Fiber Composite Mesh",
+      "massKg": 920,
+      "notes": "Perimeter demarcation; no conductive loop"
+    },
+    {
+      "id": "sign-array",
+      "name": "Site Signage — Array",
+      "geometry": { "type": "Box", "params": { "width": 2, "height": 1, "depth": 0.1 } },
+      "material": "Aluminium 6061-T6",
+      "massKg": 32,
+      "notes": "'RF RECEIVE SITE — NO TRANSMITTER ON SITE'"
+    },
+    {
+      "id": "sign-shelter",
+      "name": "Site Signage — Shelter",
+      "geometry": { "type": "Box", "params": { "width": 2, "height": 1, "depth": 0.1 } },
+      "material": "Aluminium 6061-T6",
+      "massKg": 32,
+      "notes": "'CIVIL SHELTER S-01 — CAPACITY 2400'"
+    }
+  ],
+  "interfaces": {
+    "rf_in": { "type": "24× wideband RF (0.1–6 GHz)", "note": "Receive only; each element to vault via phase-stable coax" },
+    "ptp_clock": { "type": "IEEE 1588v2 PTP + White Rabbit", "note": "Sub-ns sync to national time; optical fibre to vault" },
+    "data_out": { "type": "10 GbE / 100 GbE", "note": "Fused track picture + IQ samples to watch floor; no fire-control bus" },
+    "weapons": null
+  },
+  "signage": [
+    { "id": "sign-1", "text": "PN-LISTEN-1 · PASSIVE RX ARRAY · DUAL-USE PHYSICS", "position": [0, 12, 0] },
+    { "id": "sign-2", "text": "NO TRANSMITTER ON SITE · DOCTRINE: NULL BUS", "position": [0, 10.5, 0] },
+    { "id": "sign-3", "text": "CIVIL SHELTER S-01 · 40 m · CAPACITY 2400", "position": [40, 2, -15] }
+  ],
+  "compliance": {
+    "transmitter": "none",
+    "exciter": "absent",
+    "doctrine": "receive-only"
+  }
+}
